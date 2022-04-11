@@ -1,0 +1,20 @@
+1.Read the file line by line and store the values
+in a variable like below:
+
+let title = tenantName
+
+
+3. Form / print the DB scripts and fill in the
+fields
+
+
+
+
+
+## DB structure
+
+db.tenants.insertOne({ 
+    title: '<tenantName>', -> 
+    name: '<prettyTenantName>'
+    github: '<github>'
+});

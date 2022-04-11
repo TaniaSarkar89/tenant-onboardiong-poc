@@ -1,0 +1,68 @@
+tenantName: BankingHub
+prettyTenantName: Banking Hub
+github:
+  repoName: banking-hub
+  teamName: banking-hub
+  teamMembers:
+    - alvin@fiserv.com
+    - tania@fiserv.com
+  supportContacts:
+    - andrew@fiserv.com
+    - abhishek@fiserv.com
+studio:
+  active: false
+  beta: true
+  internal: false
+  solutions:
+    merchants: true
+    financialInstitutions: false
+  runbox:
+    # enable runbox
+    sandbox: true
+    sandboxType: mock
+    editParameterAPIExplorer: true
+    mockserver:
+      mockServerUrl: 'http://tenant-name-mock-service:4010'
+    liveSandbox:
+      serverUrl: 'https://qa.api.fiservapps.com/tenantName'
+      authenticationScheme: HMAC
+      username: McdjzLKKksIVxliNpiJlHPZ7QnnFBiXX
+      password: z9IsGDuXMRLFqiEFHXazQVyPGT6cht8aWi22MZVSudb
+      selfSignedCert: false
+  tenantServer:
+    # If genericTenantServer is true, custom host and port is not used.
+    genericTenantServer: false
+    customTenantHost: 'https://some-custom-app.svc'
+    customTenantPort: '8443'
+    providerAPIUrl: /v1/products/TenantName
+  selfService:
+    doc: true
+    runbox: false
+    apikeys: false
+    cert: false
+  tags:
+    region:
+      northAmerica: true
+      emea: false
+      latam: false
+      apac: false
+    channelType:
+      omni: true
+      cardPresent: false
+      cardNotPresent: true
+    integration:
+      restful: true
+      sdk: false
+      soap: false
+      xml: false
+    segment:
+      cmm: false
+      enterprise: true
+      government: false
+      partner: false
+      smb: false
+    feature: []
+    industry: []
+
+
+
